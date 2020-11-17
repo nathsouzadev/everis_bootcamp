@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243, 243);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone img {
+    height: 50rem;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.box {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+}
+
+.box:nth-child(1) {
+    min-height: 19rem;
+}
+
+.logo {
+    height: 3rem;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil img {
+    height: 6rem;
+}
+
+.ig-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.ig-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.other {
+    color: rgb(160, 160, 160);
+}
+
+.blue {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.stores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.downloads {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download  img {
+    height: 3rem;
+    width: 10rem;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    body {
+        background-color: #ffffff;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .group {
+        width: 100%;
+    }
+
+    .box {
+        border: 1px solid transparent;
+    }
+}
