@@ -1,0 +1,32 @@
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn + .btn{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .overview {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons {
+        display: none;
+    }
+}
